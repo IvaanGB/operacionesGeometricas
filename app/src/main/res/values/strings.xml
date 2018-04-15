@@ -3,7 +3,7 @@
     <string name="title_activity_area_triangulo">areaTriangulo</string>
     <string name="ttlAreaCirculo">Área de un Círculo</string>
     <string name="ttlareaCRadio">Ingrese Radio</string>
-    <string name="txtRadio">Radio</string>
+    <string name="txtRadio">Radio en centímetros</string>
     <string name="btnCalcular">Calcular</string>
     <string name="btnBorrar">Borrar</string>
     <string name="ttlAreaCuadrado">Área de un Cuadrado</string>
@@ -22,6 +22,9 @@
     <string name="tvOperacionR">Operación</string>
     <string name="tvDatos">Datos</string>
     <string name="tvRes">Resultado</string>
+    <string name="resArea">El área es</string>
+    <string name="cm2">cm^2</string>
+    <string name="cm3">cm^3</string>
 
     <string name="pArea">Áreas</string>
     <string name="pVolumen">Volúmenes</string>
@@ -47,5 +50,19 @@
         <item>@string/ttlVolCono</item>
         <item>@string/ttlVolCubo</item>
     </string-array>
+
+    <string name="opAreaCirculo">Área de un Círculo</string>
+    <string name="opRadio">Radio</string>
+
+    <string name="opAreaCuadrado">Área de un Cuadrado</string>
+    <string name="opCuadrado">Lado</string>
+
+    <string name="opAreaRectangulo">Área de un Rectángulo</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+
+    <string name="opAreaTriangulo">Área de un Triángulo</string>
+
+
 
 </resources>

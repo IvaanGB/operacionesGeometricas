@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tblTabla"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:stretchColumns="*"
-    tools:context="geometria.ivaangb.com.operacionesgeometricas.opRealizadas"
->
+    tools:context="geometria.ivaangb.com.operacionesgeometricas.opRealizadas">
 
 
     <TableRow
-        android:id="@+id/tblTabla"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -53,4 +51,4 @@
             android:textStyle="bold" />
     </TableRow>
 
-    </TableLayout>
+</TableLayout>

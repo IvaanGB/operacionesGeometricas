@@ -71,19 +71,21 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/btnACirculo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/btnCalcular" />
+        <Button
+            android:id="@+id/btnARectangulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="areaRectangulo"
+            android:text="@string/btnCalcular" />
 
-            <Button
-                android:id="@+id/btnBorrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/btnBorrar" />
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="borrar"
+            android:text="@string/btnBorrar" />
         </LinearLayout>
 
     </LinearLayout>
