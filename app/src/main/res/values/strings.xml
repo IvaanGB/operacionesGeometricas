@@ -19,19 +19,33 @@
     <string name="ttlVolCilindro">Volumen de un Cilindro</string>
     <string name="ttlVolCono">Volumen de un Cono</string>
     <string name="ttlVolCubo">Volumen de un Cubo</string>
+    <string name="tvOperacionR">Operación</string>
+    <string name="tvDatos">Datos</string>
+    <string name="tvRes">Resultado</string>
 
     <string name="pArea">Áreas</string>
     <string name="pVolumen">Volúmenes</string>
     <string name="pRealizados">Operaciones Realizadas</string>
     <string name="tvNumero">N°</string>
-    <string name="tvOperacionR">Operación</string>
-    <string name="tvDatos">Datos</string>
-    <string name="tvRes">Resultado</string>
     <string-array name="lvPrincipal">
         <item>@string/pArea</item>
         <item>@string/pVolumen</item>
         <item>@string/pRealizados</item>
     </string-array>
 
+
+    <string-array name="areas">
+        <item>@string/ttlAreaCuadrado</item>
+        <item>@string/ttlAreaRectangulo</item>
+        <item>@string/ttlAreaTriangulo</item>
+        <item>@string/ttlAreaCirculo</item>
+    </string-array>
+
+    <string-array name="volumenes">
+        <item>@string/ttlVolEsfera</item>
+        <item>@string/ttlVolCilindro</item>
+        <item>@string/ttlVolCono</item>
+        <item>@string/ttlVolCubo</item>
+    </string-array>
 
 </resources>
