@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">operacionesGeometricas</string>
+    <string name="title_activity_area_triangulo">areaTriangulo</string>
+    <string name="ttlAreaCirculo">Área de un Círculo</string>
+    <string name="ttlareaCRadio">Ingrese Radio</string>
+    <string name="txtRadio">Radio</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="btnBorrar">Borrar</string>
+    <string name="ttlAreaCuadrado">Área de un Cuadrado</string>
+    <string name="tvLadoCuadrado">Ingrese Lado</string>
+    <string name="txtLado">Lado</string>
+    <string name="tvBase">Ingrese Base</string>
+    <string name="txtBase">Base</string>
+    <string name="tvAltura">Ingrese Altura</string>
+    <string name="txtAltura">Altura</string>
+    <string name="ttlAreaRectangulo">Área de un Rectángulo</string>
+    <string name="ttlAreaTriangulo">Área de un Triángulo</string>
+    <string name="ttlVolEsfera">Volumen de una Esfera</string>
+    <string name="ttlVolCilindro">Volumen de un Cilindro</string>
+    <string name="ttlVolCono">Volumen de un Cono</string>
+    <string name="ttlVolCubo">Volumen de un Cubo</string>
+
+
+</resources>
