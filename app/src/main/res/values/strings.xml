@@ -20,5 +20,18 @@
     <string name="ttlVolCono">Volumen de un Cono</string>
     <string name="ttlVolCubo">Volumen de un Cubo</string>
 
+    <string name="pArea">Áreas</string>
+    <string name="pVolumen">Volúmenes</string>
+    <string name="pRealizados">Operaciones Realizadas</string>
+    <string name="tvNumero">N°</string>
+    <string name="tvOperacionR">Operación</string>
+    <string name="tvDatos">Datos</string>
+    <string name="tvRes">Resultado</string>
+    <string-array name="lvPrincipal">
+        <item>@string/pArea</item>
+        <item>@string/pVolumen</item>
+        <item>@string/pRealizados</item>
+    </string-array>
+
 
 </resources>

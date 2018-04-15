@@ -1,4 +1,4 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="ttlVolCono">Volumen de un Cono</dimen>
+    <dimen name="ttlVolCono">24dp</dimen>
 </resources>

@@ -25,7 +25,8 @@
         <activity android:name=".volEsfera" />
         <activity android:name=".volCilindro" />
         <activity android:name=".volCono" />
-        <activity android:name=".volCubo"></activity>
+        <activity android:name=".volCubo" />
+        <activity android:name=".opRealizadas"></activity>
     </application>
 
 </manifest>
