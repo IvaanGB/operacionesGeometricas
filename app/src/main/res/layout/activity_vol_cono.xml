@@ -72,10 +72,11 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnACirculo"
+            android:id="@+id/btnVolCono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="volumenCono"
             android:text="@string/btnCalcular" />
 
         <Button
@@ -83,6 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="borrar"
             android:text="@string/btnBorrar" />
     </LinearLayout>
 </LinearLayout>

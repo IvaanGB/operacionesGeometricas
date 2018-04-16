@@ -31,7 +31,7 @@ public class areaCirculo extends AppCompatActivity {
                 recursos.getString(R.string.resArea)+": "+area+recursos.getString(R.string.cm2));
 
         opOperaciones op = new opOperaciones( recursos.getString(R.string.opAreaCirculo),
-                recursos.getString(R.string.opRadio)+": "+radio, ""+area+recursos.getString(R.string.cm2));
+                recursos.getString(R.string.radio)+": "+radio, ""+area+recursos.getString(R.string.cm2));
         op.guardar();
 
         metodos.borrar(txtRadio);
