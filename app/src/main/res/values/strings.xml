@@ -1,31 +1,57 @@
 <resources>
     <string name="app_name">operacionesGeometricas</string>
     <string name="title_activity_area_triangulo">Área del Triangulo</string>
-    <string name="ttlAreaCirculo">Área de un Círculo</string>
-    <string name="ttlareaCRadio">Ingrese Radio</string>
-    <string name="txtRadio">Radio en centímetros</string>
+
+
+    <!--Nombres-->
+    <string name="ttlACirculo">Área de un Círculo</string>
+    <string name="ttlACuadrado">Área de un Cuadrado</string>
+    <string name="ttlARectangulo">Área de un Rectángulo</string>
+    <string name="ttlATriangulo">Área de un Triángulo</string>
+    <string name="ttlVCilindro">Volúmen de un Cilindro</string>
+    <string name="ttlVCono">Volúmen de un Cono</string>
+    <string name="ttlVCubo">Volúmen de un Cubo</string>
+    <string name="ttlVEsfera">Volúmen de una Esfera</string>
+
+
+    <!--Botones-->
     <string name="btnCalcular">Calcular</string>
     <string name="btnBorrar">Borrar</string>
-    <string name="ttlAreaCuadrado">Área de un Cuadrado</string>
-    <string name="tvLadoCuadrado">Ingrese Lado</string>
-    <string name="txtLado">Lado</string>
-    <string name="tvBase">Ingrese Base</string>
-    <string name="txtBase">Base</string>
+
+    <!--Tv-->
     <string name="tvAltura">Ingrese Altura</string>
-    <string name="txtAltura">Altura</string>
-    <string name="ttlAreaRectangulo">Área de un Rectángulo</string>
-    <string name="ttlAreaTriangulo">Área de un Triángulo</string>
-    <string name="ttlVolEsfera">Volumen de una Esfera</string>
-    <string name="ttlVolCilindro">Volumen de un Cilindro</string>
-    <string name="ttlVolCono">Volumen de un Cono</string>
-    <string name="ttlVolCubo">Volumen de un Cubo</string>
-    <string name="tvOperacionR">Operación</string>
+    <string name="tVBase">Ingrese Base</string>
+    <string name="tVRadio">Ingrese Radio</string>
+    <string name="tvLado">Ingrese Lado</string>
+
+    <string name="tvOperacionR">Operaciones</string>
     <string name="tvDatos">Datos</string>
-    <string name="tvRes">Resultado</string>
+    <string name="tvRes">Resultados</string>
+
+    <!--error-->
+    <string name="error">Número Inválido</string>
+
+    <!--Medidas-->
     <string name="resArea">El área es</string>
     <string name="cm2">cm^2</string>
+
+    <string name="resVolumen">El volúmen es</string>
     <string name="cm3">cm^3</string>
 
+
+    <!--Tipos y Hint-->
+    <string name="altura">Altura</string>
+    <string name="base">Base</string>
+    <string name="radio">Radio</string>
+    <string name="lado">Lado</string>
+
+    <string name="hintAltura">Altura en centímetros</string>
+    <string name="hintBase">Base en centímetros</string>
+    <string name="hintRadio">Radio en centímetros</string>
+    <string name="hintLado">Lado en centímetros</string>
+
+
+    <!--ListViews-->
     <string name="pArea">Áreas</string>
     <string name="pVolumen">Volúmenes</string>
     <string name="pRealizados">Operaciones Realizadas</string>
@@ -38,41 +64,16 @@
 
 
     <string-array name="areas">
-        <item>@string/ttlAreaCuadrado</item>
-        <item>@string/ttlAreaRectangulo</item>
-        <item>@string/ttlAreaTriangulo</item>
-        <item>@string/ttlAreaCirculo</item>
+        <item>@string/ttlACuadrado</item>
+        <item>@string/ttlARectangulo</item>
+        <item>@string/ttlATriangulo</item>
+        <item>@string/ttlACirculo</item>
     </string-array>
 
     <string-array name="volumenes">
-        <item>@string/ttlVolEsfera</item>
-        <item>@string/ttlVolCilindro</item>
-        <item>@string/ttlVolCono</item>
-        <item>@string/ttlVolCubo</item>
+        <item>@string/ttlVEsfera</item>
+        <item>@string/ttlVCilindro</item>
+        <item>@string/ttlVCono</item>
+        <item>@string/ttlVCubo</item>
     </string-array>
-
-    <string name="opAreaCirculo">Área de un Círculo</string>
-    <string name="radio">Radio</string>
-
-    <string name="opAreaCuadrado">Área de un Cuadrado</string>
-    <string name="opCuadrado">Lado</string>
-
-    <string name="opAreaRectangulo">Área de un Rectángulo</string>
-    <string name="base">Base</string>
-    <string name="altura">Altura</string>
-
-    <string name="opAreaTriangulo">Área de un Triángulo</string>
-
-    <string name="volRes">Volumen es: </string>
-
-    <string name="opVolCilindro">Volumen de un Cilindro</string>
-
-    <string name="opVolCono">Volumen de un Cono</string>
-    <string name="opVolCubo">Volumen de un Cubo</string>
-    <string name="opVolEsfera">Volumen de una Esfera</string>
-
-
-
-
-
 </resources>

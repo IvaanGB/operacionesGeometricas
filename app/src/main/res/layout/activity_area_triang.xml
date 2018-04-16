@@ -13,11 +13,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ttlAreaTriangulo"
+        android:text="@string/ttlATriangulo"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/tVBase" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/tvBase"
+            android:text="@string/tVBase"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -39,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/txtBase"
+            android:hint="@string/hintBase"
             android:inputType="numberDecimal" />
     </LinearLayout>
 
@@ -63,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/txtAltura"
+            android:hint="@string/hintAltura"
             android:inputType="numberDecimal" />
     </LinearLayout>
 

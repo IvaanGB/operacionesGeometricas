@@ -13,7 +13,7 @@ tools:context="geometria.ivaangb.com.operacionesgeometricas.volCilindro">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ttlVolCilindro"
+        android:text="@string/tvAltura"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -28,7 +28,7 @@ tools:context="geometria.ivaangb.com.operacionesgeometricas.volCilindro">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/ttlareaCRadio"
+            android:text="@string/tVRadio"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -39,7 +39,7 @@ tools:context="geometria.ivaangb.com.operacionesgeometricas.volCilindro">
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/txtRadio"
+            android:hint="@string/hintRadio"
             android:inputType="numberDecimal" />
     </LinearLayout>
 
@@ -63,7 +63,7 @@ tools:context="geometria.ivaangb.com.operacionesgeometricas.volCilindro">
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="@string/txtAltura"
+            android:hint="@string/hintAltura"
             android:inputType="numberDecimal" />
     </LinearLayout>
 

@@ -20,19 +20,23 @@ public class volEsfera extends AppCompatActivity {
     }
 
     public void volumenEsfera (View v){
-        double radio, volumen;
-        radio = Double.parseDouble(txtRadio.getText().toString());
+        if (metodos.validar(txtRadio, recursos.getString(R.string.error))) {
+            double radio, volumen;
+            radio = Double.parseDouble(txtRadio.getText().toString());
+            volumen = formulas.volumenEsfera(radio);
 
-        volumen= (4*Math.PI*Math.pow(radio, 3))/3;
-        volumen = metodos.truncarDecimales(volumen);
-        metodos.alert(this, recursos.getString(R.string.ttlVolEsfera),
-                recursos.getString(R.string.volRes)+": "+volumen+ recursos.getString(R.string.cm3));
+            metodos.alert(this,
+                    ""+recursos.getString(R.string.ttlVEsfera),
+                    ""+recursos.getString(R.string.resVolumen) + ": " + volumen + recursos.getString(R.string.cm3));
 
-        opOperaciones op = new opOperaciones( recursos.getString(R.string.opVolCilindro),
-                recursos.getString(R.string.radio)+": "+radio, ""+volumen+recursos.getString(R.string.cm3));
-        op.guardar();
+            opOperaciones op = new opOperaciones(
+                    ""+recursos.getString(R.string.ttlVEsfera),
+                    recursos.getString(R.string.radio) + ": " + radio,
+                    "" + volumen + recursos.getString(R.string.cm3));
+            op.guardar();
 
-        metodos.borrar(txtRadio);
+            metodos.borrar(txtRadio);
+        }
     }
 
     public void borrar (View v){

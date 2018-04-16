@@ -3,6 +3,7 @@ package geometria.ivaangb.com.operacionesgeometricas;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.widget.EditText;
 
 /**
@@ -26,6 +27,15 @@ public class metodos {
 
     public static double truncarDecimales(Double resultado){
         return resultado = (double)Math.round(resultado*100d)/100d;
+    }
+
+    public static boolean validar(EditText texto, String error){
+        if (texto.getText().toString().isEmpty() || texto.getText().toString().equals(".")){
+            texto.requestFocus();
+            texto.setError(error);
+            return false;
+        }
+        return true;
     }
 
     public static void borrar (EditText texto){

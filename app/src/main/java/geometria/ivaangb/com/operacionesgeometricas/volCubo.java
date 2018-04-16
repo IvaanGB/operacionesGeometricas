@@ -20,27 +20,32 @@ public class volCubo extends AppCompatActivity {
 
     }
 
-    public void volumenCubo (View v){
-        Double medida, area;
-        medida = Double.parseDouble(txtLado.getText().toString());
+    public void volumenCubo (View v) {
 
-        area = medida*medida*medida;
-        area = metodos.truncarDecimales(area);
+        if (metodos.validar(txtLado, recursos.getString(R.string.error))){
 
-        metodos.alert(this, recursos.getString(R.string.ttlVolCubo),
-                recursos.getString(R.string.volRes)+": "+area+
-                        recursos.getString(R.string.cm3));
+        Double lado, area;
+        lado = Double.parseDouble(txtLado.getText().toString());
 
-        opOperaciones op = new opOperaciones( recursos.getString(R.string.opVolCubo),
-                recursos.getString(R.string.txtLado)+": "+medida, ""+area+recursos.getString(R.string.cm2));
+        area = formulas.volumenCubo(lado);
+
+        metodos.alert(this,
+                "" + recursos.getString(R.string.ttlVCubo),
+                "" + recursos.getString(R.string.resVolumen) + ": " + area + recursos.getString(R.string.cm3));
+
+        opOperaciones op = new opOperaciones(
+                "" + recursos.getString(R.string.ttlVCubo),
+                recursos.getString(R.string.lado) + ": " + lado,
+                "" + area + recursos.getString(R.string.cm3));
         op.guardar();
 
         metodos.borrar(txtLado);
+    }
 
     }
 
     public void borrar (View v){
-        borrar(txtLado);
+        metodos.borrar(txtLado);
     }
 
 }

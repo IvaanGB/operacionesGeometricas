@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class areaCuadrado extends AppCompatActivity {
-    private EditText lado;
+    private EditText txtlado;
     private Resources recursos;
 
     @Override
@@ -15,31 +15,34 @@ public class areaCuadrado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_area_cuadrado);
 
-        lado = findViewById(R.id.txtAreaCuadrado);
+        txtlado = findViewById(R.id.txtAreaCuadrado);
         recursos = getResources();
     }
 
     public void areaCuadrado (View v){
-        Double medida, area;
-        medida = Double.parseDouble(lado.getText().toString());
+        if (metodos.validar(txtlado,recursos.getString(R.string.error))) {
+            Double lado, area;
+            lado = Double.parseDouble(txtlado.getText().toString());
 
-        area = medida*medida;
-        area = metodos.truncarDecimales(area);
+            area = formulas.areaCuadrado(lado);
 
-        metodos.alert(this, recursos.getString(R.string.ttlAreaCuadrado),
-                recursos.getString(R.string.resArea)+": "+area+
-        recursos.getString(R.string.cm2));
+            metodos.alert(this,
+                    "" + recursos.getString(R.string.ttlACuadrado),
+                    recursos.getString(R.string.resArea) + ": " + area + recursos.getString(R.string.cm2));
 
-        opOperaciones op = new opOperaciones( recursos.getString(R.string.opAreaCuadrado),
-                recursos.getString(R.string.opCuadrado)+": "+area, ""+area+recursos.getString(R.string.cm2));
-        op.guardar();
+            opOperaciones op = new opOperaciones(
+                    "" + recursos.getString(R.string.ttlACuadrado),
+                    recursos.getString(R.string.lado) + lado,
+                    "" + area + recursos.getString(R.string.cm2));
+            op.guardar();
 
-        metodos.borrar(lado);
+            metodos.borrar(txtlado);
+        }
 
     }
 
     public void borrar (View v){
-        borrar(lado);
+        metodos.borrar(txtlado);
     }
 
 }

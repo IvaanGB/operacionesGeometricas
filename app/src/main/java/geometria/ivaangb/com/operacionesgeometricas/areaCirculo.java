@@ -20,21 +20,23 @@ public class areaCirculo extends AppCompatActivity {
     }
 
     public void areaCirculoC(View v){
-        Double radio, area;
-        radio = Double.parseDouble(txtRadio.getText().toString());
+        if (metodos.validar(txtRadio, recursos.getString(R.string.error))) {
+            Double radio, area;
+            radio = Double.parseDouble(txtRadio.getText().toString());
+            area = formulas.areaCirculo(radio);
+            metodos.alert(this,
+                    "" + recursos.getString(R.string.ttlACirculo),
+                    recursos.getString(R.string.resArea)+" " + area + recursos.getString(R.string.cm2));
 
-        area = Math.PI * (Math.pow(radio, 2));
-        area = metodos.truncarDecimales(area);
+            opOperaciones op = new opOperaciones(
+                    "" + recursos.getString(R.string.ttlACirculo),
+                    recursos.getString(R.string.radio) + radio,
+                    area + recursos.getString(R.string.cm2));
+            op.guardar();
 
+            metodos.borrar(txtRadio);
 
-        metodos.alert(this, recursos.getString(R.string.ttlAreaCirculo),
-                recursos.getString(R.string.resArea)+": "+area+recursos.getString(R.string.cm2));
-
-        opOperaciones op = new opOperaciones( recursos.getString(R.string.opAreaCirculo),
-                recursos.getString(R.string.radio)+": "+radio, ""+area+recursos.getString(R.string.cm2));
-        op.guardar();
-
-        metodos.borrar(txtRadio);
+        }
     }
 
     public void borrar(View v){

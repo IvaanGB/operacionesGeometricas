@@ -21,22 +21,27 @@ public class areaTriang extends AppCompatActivity {
     }
 
     public void areaTriangulo (View v){
-        double base, altura, area;
-        base = Double.parseDouble(txtBase.getText().toString());
-        altura = Double.parseDouble(txtAltura.getText().toString());
-        area = (base*altura)/2;
+        if (metodos.validar(txtBase, recursos.getString(R.string.error))
+                && metodos.validar(txtAltura, recursos.getString(R.string.error))) {
 
-        area = metodos.truncarDecimales(area);
-        metodos.alert(this,recursos.getString(R.string.ttlAreaTriangulo),
-                recursos.getString(R.string.resArea)+": "+area+ recursos.getString(R.string.cm2));
+            double base, altura, area;
+            base = Double.parseDouble(txtBase.getText().toString());
+            altura = Double.parseDouble(txtAltura.getText().toString());
+            area = formulas.areaTriangulo(base, altura);
 
-        opOperaciones op = new opOperaciones( recursos.getString(R.string.opAreaRectangulo),
-                recursos.getString(R.string.base)+": "+base+ "\n" +
-                        recursos.getString(R.string.altura)+": "+altura, ""+area+recursos.getString(R.string.cm2));
-        op.guardar();
+            metodos.alert(this,
+                    ""+recursos.getString(R.string.ttlATriangulo),
+                    ""+recursos.getString(R.string.resArea) + ": " + area + recursos.getString(R.string.cm2));
 
-        metodos.borrar(txtAltura);
-        metodos.borrar(txtBase);
+            opOperaciones op = new opOperaciones(
+                    ""+recursos.getString(R.string.ttlATriangulo),
+                    ""+recursos.getString(R.string.base) + ": " + base + "\n" + recursos.getString(R.string.altura) + ": " + altura,
+                    "" + area + recursos.getString(R.string.cm2));
+            op.guardar();
+
+            metodos.borrar(txtAltura);
+            metodos.borrar(txtBase);
+        }
     }
 
     public void borrar (View v){
