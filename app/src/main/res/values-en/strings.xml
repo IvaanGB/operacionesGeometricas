@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">operacionesGeometricas</string>
+    <string name="title_activity_area_triangulo">Triangle Area</string>
+    <string name="ttlAreaCirculo">Area of a Circle</string>
+    <string name="ttlareaCRadio">Type ratio</string>
+    <string name="txtRadio">Radius in centimeter</string>
+    <string name="btnCalcular">Calculate</string>
+    <string name="btnBorrar">Clear</string>
+    <string name="ttlAreaCuadrado">Area of a square</string>
+    <string name="tvLadoCuadrado">Type side</string>
+    <string name="txtLado">Side</string>
+    <string name="tvBase">Type Base</string>
+    <string name="txtBase">Base</string>
+    <string name="tvAltura">Type height</string>
+    <string name="txtAltura">Height</string>
+    <string name="ttlAreaRectangulo">Area of a rectangle</string>
+    <string name="ttlAreaTriangulo">Area of a triangle</string>
+    <string name="ttlVolEsfera">Volume of a Sphere</string>
+    <string name="ttlVolCilindro">Volume of a cylinder</string>
+    <string name="ttlVolCono">Volume of a cone</string>
+    <string name="ttlVolCubo">Volume of a cube</string>
+    <string name="tvOperacionR">Operations</string>
+    <string name="tvDatos">Data</string>
+    <string name="tvRes">Output</string>
+    <string name="resArea">Area is</string>
+    <string name="cm2">cm^2</string>
+    <string name="cm3">cm^3</string>
+    <string name="pArea">Areas</string>
+    <string name="pVolumen">Volumes</string>
+    <string name="pRealizados">Operations</string>
+    <string name="opAreaCirculo">Area of a circle</string>
+    <string name="radio">Ratio</string>
+    <string name="opAreaCuadrado">Area of a square</string>
+    <string name="opCuadrado">Side</string>
+    <string name="opAreaRectangulo">Area of a rectangle</string>
+    <string name="base">Base</string>
+    <string name="altura">Height</string>
+    <string name="opAreaTriangulo">Area of a triangle</string>
+    <string name="volRes">Volume is:</string>
+    <string name="opVolCilindro">Volume of a cylinder</string>
+    <string name="opVolCono">Volume of a cone</string>
+    <string name="opVolCubo">Volume of a cube</string>
+    <string name="opVolEsfera">Volume of a sphere</string>
+</resources>

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">operacionesGeometricas</string>
-    <string name="title_activity_area_triangulo">areaTriangulo</string>
+    <string name="title_activity_area_triangulo">Área del Triangulo</string>
     <string name="ttlAreaCirculo">Área de un Círculo</string>
     <string name="ttlareaCRadio">Ingrese Radio</string>
     <string name="txtRadio">Radio en centímetros</string>
@@ -29,7 +29,7 @@
     <string name="pArea">Áreas</string>
     <string name="pVolumen">Volúmenes</string>
     <string name="pRealizados">Operaciones Realizadas</string>
-    <string name="tvNumero">N°</string>
+    <string name="tvNumero" translatable="false">N°</string>
     <string-array name="lvPrincipal">
         <item>@string/pArea</item>
         <item>@string/pVolumen</item>
